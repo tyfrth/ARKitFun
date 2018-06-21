@@ -21,9 +21,23 @@
                             <arscnView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="GgM-n4-XvS">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                             </arscnView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="K9n-AG-kkf">
+                                <rect key="frame" x="315" y="588" width="44" height="59"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="59" id="9dZ-WN-CV1"/>
+                                    <constraint firstAttribute="width" constant="44" id="R4t-Cg-xmA"/>
+                                </constraints>
+                                <state key="normal" image="refresh"/>
+                                <state key="highlighted" image="refreshPressed"/>
+                                <connections>
+                                    <action selector="resetTracking" destination="BYZ-38-t0r" eventType="touchUpInside" id="Kvx-RU-rAL"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="K9n-AG-kkf" secondAttribute="trailing" constant="16" id="CbI-ia-wF7"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="K9n-AG-kkf" secondAttribute="bottom" constant="20" id="IJm-zW-h54"/>
                             <constraint firstItem="GgM-n4-XvS" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="Vi6-xt-qkL"/>
                             <constraint firstItem="GgM-n4-XvS" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="WN3-Nt-UJl"/>
                             <constraint firstItem="GgM-n4-XvS" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="YWe-i4-m2Z"/>
@@ -40,4 +54,8 @@
             <point key="canvasLocation" x="133.59999999999999" y="126.38680659670166"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="refresh" width="20" height="23"/>
+        <image name="refreshPressed" width="20" height="23"/>
+    </resources>
 </document>
