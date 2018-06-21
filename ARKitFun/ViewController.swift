@@ -17,7 +17,13 @@ class ViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+        
+        //create session
+        self.sceneView.session.run(configuration)
+        
+        //add debug options
+        self.sceneView.debugOptions = [ARSCNDebugOptions.showFeaturePoints, ARSCNDebugOptions.showWorldOrigin]
+      
     }
 
     override func didReceiveMemoryWarning() {
